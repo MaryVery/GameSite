@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.conf-wrapper {
+  position: absolute;
+  width: 95%;
+  height: 95vh;
+  z-index: 999;
+  /* background-color: pink; */
+  opacity: 0.5;
+}
+
+/* .animation-disappear-confetti {
+  animation:
+} */
+.animated {
+  transition-property: opacity;
+  transition-duration: 3s;
+}
+
+.animation-boombig {
+  animation:  boom 1s linear 0ms 1 normal;
+}
+@keyframes boom {
+  0% {
+    transform: rotate(-90deg) translate(70px);
+  }
+
+ 50% {
+    transform: rotate(90deg)  translate(70px);
+ }
+ 100% {
+    transform: rotate(270deg) translate(70px);
+ }
+}
+
+.animation-boomsmall {
+  animation:  boomSmall 1s linear 0ms 1 reverse;
+}
+@keyframes boomSmall {
+  0% {
+    transform: rotate(-90deg) translate(50px);
+  }
+
+ 50% {
+    transform: rotate(90deg)  translate(50px);
+ }
+ 100% {
+    transform: rotate(270deg) translate(50px);
+ }}
+
+.confetti {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+}
+
+

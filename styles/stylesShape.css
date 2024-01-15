@@ -1,0 +1,128 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: #f4c531;
+} */
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+#selested-theme {
+  margin-bottom: 15px;
+}
+#start {
+  background-color: #ffffff;
+  height: 6em;
+  width: 6em;
+  font-size: 1.8em;
+  border: 0.4em solid #090029;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.gameShape-container {
+  max-width: 700px;
+  /* width: 90%; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:  15px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 0.6em solid #090029;
+  border-radius: 0.5em;
+}
+.timer span {
+  font-weight: 600;
+}
+.header,
+.num {
+  text-align: left;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px 15px;
+  flex-wrap: wrap;
+}
+.options button {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0.4em 1em;
+  /* padding: 0.2em; */
+  /* margin-top: 10px; */
+  border: 0.3em solid #090029;
+  border-radius: 0.5em;
+  /* box-shadow: 0 0.5em 0 0 #090029; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nxt-btn-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.next-btn {
+  cursor: pointer;
+  background-color: #090029;
+  color: #ffffff;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  padding: 0.8em 3em;
+}
+.hide {
+  display: none;
+}
+.options:disabled {
+  border-color: #a0a0a0;
+  color: #a0a0a0;
+  box-shadow: 0 0.5em 0 0 #a0a0a0;
+  cursor: not-allowed;
+}
+.options button.correct {
+  background: #58cc5d;
+}
+.options button.incorrect {
+  background: #eb5650;
+}
+.options button.correct,
+.options button.incorrect {
+  color: #ffffff;
+}
+
+#user-score {
+  margin-bottom: 1em;
+  color: #020202;
+}
+
+.imageShape {
+  object-fit: contain;
+  width: 90%; 
+  display: block;
+  margin: 10px auto;
+  max-height: 400px;
+  filter:  contrast(0);
+  user-select: none;
+  pointer-events: none;
+}
+.questions {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageShape.done {
+  filter:  contrast(1);
+}
+
+

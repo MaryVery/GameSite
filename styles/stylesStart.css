@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #FCE3CD;
+}
+
+button {
+  /* border: none;
+  border-radius: 0.3em;
+  padding: 1em 1.5em; */
+  padding: 10px 15px;
+  background-color: #ffffff;
+  font-size: 1.3em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn-choose-game {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px 25px;
+}
+
+.start-game-item {
+  background-color: #B3DBD1;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.start-game-item span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.start-game-item i {
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid white;
+  /* background-color: #f4c531; */
+  /* background-color: #ffd139; */
+  background-color: #ffe286;
+  padding: 10px;
+}
